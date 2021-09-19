@@ -1,0 +1,139 @@
+/*
+
+=============
+Variables
+=============
+*/
+
+:root {
+  /* dark shades of primary color */
+
+  --clr-white: #ffff;
+  --fixed-width: 765px;
+  --radius: 0.7rem;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --spacing: 0.1rem;
+  --max-width: 1170rem;
+  --clr-pink: #dd2476;
+}
+
+/*
+
+===============
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bitter", serif;
+  font-size: 1.7rem;
+  background-color: #f7b42c;
+  line-height: 3rem;
+  background-image: linear-gradient(315deg, #7b4397 0%, #dc2430 74%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25rem;
+  color: #fc5296;
+  margin-bottom: 0.75rem;
+  margin-top: 0.7rem;
+}
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.container {
+  width: 90vw;
+  margin: 5rem 0;
+  max-width: var(--fixed-width);
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--dark-shadow);
+}
+
+.container button {
+  color: var(--clr-white);
+  /* display: block; */
+  width: 100%;
+  border-color: transparent;
+  background-color: var(--clr-pink);
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  outline: none;
+  padding: 0.5rem 0.3rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.container button:hover {
+  /* background-color: #d4418e;
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%); */
+  background-image: linear-gradient(315deg, #7b4397 0%, #dc2430 74%);
+}
+
+.destination {
+  display: grid;
+  grid-template-columns: auto 5fr;
+  column-gap: 9.75rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.destination img {
+  width: 180px;
+  height: 154px;
+  object-fit: cover;
+  margin-top: 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.destination h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  color: #fd5e53;
+  margin-top: -7rem;
+}
+
+.destination p {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  color: #fe784c;
+
+  margin-top: -12.7rem;
+}
+
+.destination button {
+  padding: 0.6rem;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  width: 48%;
+  margin-top: -5.2rem;
+  font-family: "Hind Siliguri", sans-serif;
+  font-family: "Oxygen", sans-serif;
+  background-color: var(--clr-pink);
+}
