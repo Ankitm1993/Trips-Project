@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     cityName: "London, England",
-    placeName: "London Bridge Tower",
+    placeName : "London Bridge Tower",
     image:
       "https://cdn.pixabay.com/photo/2014/09/11/18/23/tower-bridge-441853_960_720.jpg",
   },
