@@ -17,7 +17,7 @@ export default [
   {
     id: 3,
     cityName: "Paris, France",
-    placeName: "Eiffel Tower",
+    placeName : "Eiffel Tower",
     image:
       "https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_960_720.jpg",
   },
